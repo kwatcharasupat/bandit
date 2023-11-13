@@ -1,0 +1,21 @@
+data:
+  data_root:
+    dnr: "$DATA_ROOT/DnR/v2np"
+    musdb: "$DATA_ROOT/MUSDB18/HQ/saded-np"
+  datamodule: DivideAndRemasterWithProbabilisticMUSDB18VocalsDataModule
+  batch_size: 2
+  num_workers: null
+  train_kwargs:
+    dnr:
+      chunk_size_second: 6.0
+      fs: 44100
+    musdb:
+      npy_memmap: true
+  val_kwargs:
+    dnr:
+      chunk_size_second: 6.0
+      hop_size_second: 3.0
+      fs: 44100
+    musdb:
+      npy_memmap: true
+

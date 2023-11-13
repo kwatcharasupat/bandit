@@ -1,0 +1,5 @@
+name: MultiStemWrapper
+kwargs:
+  name: MultichannelSingleSrcNegSDR
+  kwargs:
+    sdr_type: snr

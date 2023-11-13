@@ -1,0 +1,15 @@
+data:
+  data_root: "$DATA_ROOT/DnR/v2np48"
+  datamodule: DivideAndRemasterDataModule
+  #target_stem: "vocals"
+  batch_size: 2
+  num_workers: null
+  #use_on_the_fly: false
+  train_kwargs:
+    target_length: 20000
+    chunk_size_second: 5.5
+    fs: 48000
+  val_kwargs:
+    chunk_size_second: 5.5
+    hop_size_second: 2.25
+    fs: 48000

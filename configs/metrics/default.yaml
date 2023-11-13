@@ -1,0 +1,18 @@
+dev:
+  sisnr:
+    name: ScaleInvariantSignalNoiseRatio
+    kwargs: { }
+  snr:
+    name: SignalNoiseRatio
+    kwargs: { }
+
+test:
+  sisnr:
+    name: ScaleInvariantSignalNoiseRatio
+    kwargs: { }
+  snr:
+    name: SignalNoiseRatio
+    kwargs: { }
+  sdr:
+    name: SafeSignalDistortionRatio
+    kwargs: { }

@@ -1,0 +1,18 @@
+accelerator: gpu
+logger:
+  name: TensorBoardLogger
+  kwargs:
+    save_dir: "/home/kwatchar3/projects/bandsplit-rnn/logs"
+    name: "[[ipaddr]]"
+callbacks:
+  - name: EarlyStopping
+    kwargs:
+      monitor: val/loss
+      patience: 20
+  - name: ModelCheckpoint
+    kwargs:
+      monitor: "val/loss"
+      save_top_k: 3
+      save_last: true
+max_epochs: 100
+gradient_clip_val: 5.0

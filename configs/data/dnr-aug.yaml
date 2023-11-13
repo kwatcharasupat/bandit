@@ -1,0 +1,17 @@
+data:
+  data_root: "$DATA_ROOT/DnR/v2np"
+  datamodule: DivideAndRemasterDataModule
+  #target_stem: "vocals"
+  batch_size: 2
+  num_workers: null
+  #use_on_the_fly: false
+  train_kwargs:
+    target_length: 20000
+    chunk_size_second: 6.0
+    fs: 44100
+  val_kwargs:
+    chunk_size_second: 6.0
+    hop_size_second: 3.0
+    fs: 44100
+augmentation: "file:/home/kwatchar3/projects/bandsplit-rnn/core/configs/augmentation/gainshift.yaml"
+    

@@ -1,0 +1,33 @@
+name: "PatchingMaskMultiSourceBandSplitRNN"
+kwargs:
+  in_channel: 1
+  stems: [ 'speech', 'music', 'effects' ]
+  band_specs: "dnr:mel"
+  n_bands: 64
+  fs: 44100
+  require_no_overlap: false
+  require_no_gap: true
+  normalize_channel_independently: false
+  treat_channel_as_feature: true
+  n_sqm_modules: 8
+  emb_dim: 128
+  rnn_dim: 256
+  bidirectional: true
+  rnn_type: "GRU"
+  mlp_dim: 512
+  hidden_activation: "Tanh"
+  hidden_activation_kwargs: null
+  complex_mask: true
+  n_fft: 2048
+  win_length: 2048
+  hop_length: 512
+  window_fn: "hann_window"
+  wkwargs: null
+  power: null
+  center: true
+  normalized: true
+  pad_mode: "constant"
+  onesided: true
+  mask_kernel_freq: 1
+  mask_kernel_time: 9
+  conv_kernel_size: 9

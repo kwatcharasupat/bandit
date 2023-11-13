@@ -1,9 +1,9 @@
 seed: 42
-trainer: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/trainer/bsrnn-noaccum.yaml"
-data: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/data/musdb.yaml"
+trainer: "file:$PROJECT_ROOT/configs/trainer/bsrnn-noaccum.yaml"
+data: "file:$PROJECT_ROOT/configs/data/musdb.yaml"
 system:
-  model: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/model/bsrnn-small-dnr-multi-mus64-freeze.yaml"
-  optimizer: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/optimizer/bsrnn.yaml"
-  loss: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/loss/psnr.yaml"
-  metrics: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/metrics/nospeech.yaml"
-  inference: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/inference/default.yaml"
+  model: "file:$PROJECT_ROOT/configs/model/bsrnn-small-dnr-multi-mus64-freeze.yaml"
+  optimizer: "file:$PROJECT_ROOT/configs/optimizer/bsrnn.yaml"
+  loss: "file:$PROJECT_ROOT/configs/loss/psnr.yaml"
+  metrics: "file:$PROJECT_ROOT/configs/metrics/default.yaml"
+  inference: "file:$PROJECT_ROOT/configs/inference/default.yaml"

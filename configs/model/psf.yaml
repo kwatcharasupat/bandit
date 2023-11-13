@@ -1,0 +1,7 @@
+name: "PhaseSensitiveFilter"
+kwargs:
+  stems:
+    - speech
+    - music
+    - effects
+  fs: 44100

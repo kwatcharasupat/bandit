@@ -1,0 +1,4 @@
+name: MultiStemWrapperFromConfig
+kwargs:
+  name: L1Loss
+  kwargs: {}

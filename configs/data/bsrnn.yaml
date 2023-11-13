@@ -1,0 +1,12 @@
+data_root: "$DATA_ROOT/MUSDB18/HQ"
+target_stem: "vocals"
+batch_size: 2
+num_workers: 32
+use_on_the_fly: true
+train_kwargs:
+  target_length: 20000
+  apply_probability: 0.5 # 0.5 is too high
+  chunk_size_second: 3.0
+  random_scale_range_db: [ -10, 10 ]
+  drop_probability: 0.1
+  rescale: true

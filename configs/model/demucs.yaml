@@ -1,0 +1,7 @@
+name: "HDemucsWrapper"
+kwargs:
+  stems: ["speech", "music", "effects"]
+  fs: 44100
+  audio_channels: 1
+  nfft: 4096
+  depth: 6

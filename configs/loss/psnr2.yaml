@@ -1,0 +1,6 @@
+name: TimeFreqSignalNoisePNormRatioLoss
+kwargs:
+  tkwargs:
+    p: 2
+  fkwargs:
+    p: 2

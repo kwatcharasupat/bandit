@@ -1,0 +1,9 @@
+name: "OpenUnmixWrapper"
+kwargs:
+  nb_channels: 1
+  nb_bins: 2049
+  n_fft: 4096
+  hidden_size: 512
+  stems: ["vocals", "drums", "bass", "other"]
+  fs: 44100
+  pretrained: umxhq

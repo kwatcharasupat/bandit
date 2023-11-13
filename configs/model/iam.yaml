@@ -1,0 +1,7 @@
+name: "IdealAmplitudeMask"
+kwargs:
+  stems:
+    - speech
+    - music
+    - effects
+  fs: 44100

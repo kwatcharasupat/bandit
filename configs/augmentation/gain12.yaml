@@ -1,0 +1,21 @@
+fix_clipping: true
+scaler_margin: 0.5
+audiomentations:
+  "[common]":
+    name: Compose
+    kwargs:
+      kwargs:
+        shuffle: true
+        p: 1.0
+        output_type: dict
+      transforms:
+        - name: Gain
+          kwargs:
+            min_gain_in_db: -12.0
+            max_gain_in_db: 12.0
+            p: 0.5
+        - name: PolarityInversion
+          kwargs:
+            p: 0.5
+
+

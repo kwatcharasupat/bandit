@@ -1,0 +1,8 @@
+name: TimeFreqSignalNoisePNormRatioLoss
+kwargs:
+  tkwargs:
+    p: 2
+    scale_invariant: true
+  fkwargs:
+    p: 2
+    scale_invariant: true

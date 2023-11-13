@@ -1,0 +1,8 @@
+name: "OpenUnmixWrapper"
+kwargs:
+  nb_channels: 1
+  nb_bins: 2049
+  n_fft: 4096
+  hidden_size: 512
+  stems: ["speech", "music", "effects"]
+  fs: 44100

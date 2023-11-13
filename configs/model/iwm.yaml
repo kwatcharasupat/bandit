@@ -1,0 +1,7 @@
+name: "IdealWienerMask"
+kwargs:
+  stems:
+    - speech
+    - music
+    - effects
+  fs: 44100

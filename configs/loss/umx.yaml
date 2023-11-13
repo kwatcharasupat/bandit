@@ -1,0 +1,5 @@
+name: MultiStemWrapperFromConfig
+kwargs:
+  name: MSELoss
+  kwargs: {}
+  modality: spectrogram

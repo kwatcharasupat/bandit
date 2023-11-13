@@ -1,0 +1,54 @@
+fix_clipping: true
+scaler_margin: 0.5
+audiomentations:
+  "[common]":
+    name: Compose
+    kwargs:
+      kwargs:
+        shuffle: true
+        p: 1.0
+        output_type: dict
+      transforms:
+        - name: Gain
+          kwargs:
+            min_gain_in_db: -12.0
+            max_gain_in_db: 12.0
+            p: 0.5
+        - name: PolarityInversion
+          kwargs:
+            p: 0.5
+        - name: Shift
+          kwargs:
+            min_shift: -0.5
+            max_shift: 0.5
+            shift_unit: "fraction"
+            rollover: true
+            p: 0.5
+  effects:
+    name: Compose
+    kwargs:
+      kwargs:
+        shuffle: true
+        p: 1.0
+        output_type: dict
+      transforms:
+        - name: AddColoredNoise
+          kwargs:
+            min_snr_in_db: -24.0
+            max_snr_in_db: 24.0
+            p: 0.5
+            sample_rate: 44100
+  background:
+    name: Compose
+    kwargs:
+      kwargs:
+        shuffle: true
+        p: 1.0
+        output_type: dict
+      transforms:
+        - name: AddColoredNoise
+          kwargs:
+            min_snr_in_db: -24.0
+            max_snr_in_db: 24.0
+            p: 0.5
+            sample_rate: 44100

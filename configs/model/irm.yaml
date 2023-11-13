@@ -1,0 +1,7 @@
+name: "IdealRatioMask"
+kwargs:
+  stems:
+    - speech
+    - music
+    - effects
+  fs: 44100

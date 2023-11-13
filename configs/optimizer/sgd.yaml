@@ -1,0 +1,9 @@
+optimizer:
+  name: SGD
+  kwargs:
+    lr: 3.0e-5
+scheduler:
+  name: StepLR
+  kwargs:
+    step_size: 2
+    gamma: 0.98

@@ -1,0 +1,7 @@
+data_root: "$DATA_ROOT/MUSDB18/HQ/saded"
+target_stem: "vocals"
+batch_size: 1
+num_workers: 16
+use_on_the_fly: false
+train_kwargs:
+  target_length: 20000

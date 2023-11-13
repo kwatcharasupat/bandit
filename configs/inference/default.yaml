@@ -1,0 +1,9 @@
+fader:
+  name: OverlapAddFader
+  kwargs:
+    window_type: hann
+    chunk_size_second: 6.0
+    hop_size_second: 0.5
+    fs: 44100
+    batch_size: 24
+
