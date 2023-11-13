@@ -12,7 +12,7 @@ from .dataset import (
 
 
 def DivideAndRemasterDataModule(
-        data_root: str = "/home/kwatchar3/Documents/data/DnR/v2",
+        data_root: str = "$DATA_ROOT/DnR/v2",
         batch_size: int = 2,
         num_workers: int = 8,
         train_kwargs: Optional[Mapping] = None,

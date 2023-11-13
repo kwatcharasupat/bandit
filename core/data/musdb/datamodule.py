@@ -12,7 +12,7 @@ from core.data.musdb.dataset import (
 
 
 def MUSDB18DataModule(
-        data_root: str = "/home/kwatchar3/Documents/data/MUSDB18/HQ",
+        data_root: str = "$DATA_ROOT/MUSDB18/HQ",
         target_stem: str = "vocals",
         batch_size: int = 2,
         num_workers: int = 8,

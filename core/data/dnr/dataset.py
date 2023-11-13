@@ -375,7 +375,7 @@ if __name__ == "__main__":
 
     for split_ in ["train", "val", "test"]:
         ds = DivideAndRemasterRandomChunkDatasetWithSpeechReverb(
-                data_root="/home/kwatchar3/Documents/data/DnR/v2np",
+                data_root="$DATA_ROOT/DnR/v2np",
                 split=split_,
                 target_length=100,
                 chunk_size_second=6.0

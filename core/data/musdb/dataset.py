@@ -266,7 +266,7 @@ class MUSDB18SadOnTheFlyAugmentedDataset(MUSDB18SadDataset):
 #
 #     for split_ in ["train", "val", "test"]:
 #         ds = MUSDB18SadOnTheFlyAugmentedDataset(
-#             data_root="/home/kwatchar3/Documents/data/MUSDB18/HQ/saded",
+#             data_root="$DATA_ROOT/MUSDB18/HQ/saded",
 #             split=split_,
 #             target_stem="vocals"
 #         )

@@ -13,5 +13,5 @@ data:
     chunk_size_second: 6.0
     hop_size_second: 3.0
     fs: 44100
-augmentation: "file:/home/kwatchar3/projects/bandsplit-rnn/core/configs/augmentation/gainshift.yaml"
+augmentation: "file:$PROJECT_ROOT/core/configs/augmentation/gainshift.yaml"
     

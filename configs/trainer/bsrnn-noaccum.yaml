@@ -2,7 +2,7 @@ accelerator: gpu
 logger:
   name: TensorBoardLogger
   kwargs:
-    save_dir: "/home/kwatchar3/projects/bandsplit-rnn/logs"
+    save_dir: "$PROJECT_ROOT/logs"
     name: "[[ipaddr]]"
 callbacks:
   - name: EarlyStopping

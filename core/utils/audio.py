@@ -450,7 +450,7 @@ if __name__ == "__main__":
     ola = OverlapAddFader("hann", 6.0, 1.0, fs, batch_size=32)
 
     audio_, _ = ta.load(
-            "/home/kwatchar3/Documents/data/MUSDB18/HQ/canonical/test/BKS - Too "
+            "$DATA_ROOT/MUSDB18/HQ/canonical/test/BKS - Too "
             "Much/vocals.wav"
     )
 
