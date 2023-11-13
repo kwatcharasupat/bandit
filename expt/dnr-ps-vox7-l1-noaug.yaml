@@ -1,0 +1,9 @@
+seed: 42
+trainer: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/trainer/bsrnn-noaccum.yaml"
+data: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/data/dnr.yaml"
+system:
+  model: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/model/bsrnn-small-dnr-ps-vox7.yaml"
+  optimizer: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/optimizer/bsrnn.yaml"
+  loss: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/loss/l1.yaml"
+  metrics: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/metrics/nospeech.yaml"
+  inference: "file:/home/kwatchar3/projects/bandsplit-rnn/configs/inference/default.yaml"
