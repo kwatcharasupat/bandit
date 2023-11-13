@@ -7,7 +7,8 @@ Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Sepa
 ## For Replication
 
 - Install required dependencies from `environment.yaml`.
-- Obtain DnR dataset from [here](https://zenodo.org/records/5574713) and MUSDB18-HQ from [here](https://sigsep.github.io/datasets/musdb.html)
+- Obtain DnR dataset from [here](https://zenodo.org/records/5574713) and MUSDB18-HQ from [here](https://sigsep.github.io/datasets/musdb.html).
+- Run each dataset's respective `proprocess.py`.
 - `python train.py expt/path-to-the-desired-experiment.yaml`.
 - `python test.py expt/path-to-the-desired-experiment.yaml --ckpt_path=path/to/checkpoint-from-training.ckpt`.
 
