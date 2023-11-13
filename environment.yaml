@@ -1,0 +1,30 @@
+name: ambi
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - torchaudio=2.0.0
+  - pytorch-cuda=11.7
+  - lightning
+  - torchmetrics
+  - pandas
+  - pip
+  - black
+  - pip:
+      - asteroid
+      - tensorboard
+      - tensorboardx
+      - fire
+      - geoopt
+      - fast-bss-eval
+      - torch-audiomentations
+      - pedalboard
+      - langcodes
+      - language-data
+      - mypy
+      - mypy-extensions
+      - autotyping
