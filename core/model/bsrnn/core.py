@@ -8,7 +8,7 @@ from core.model.bsrnn import BandsplitCoreBase
 from core.model.bsrnn.bandsplit import BandSplitModule
 from core.model.bsrnn.maskestim import (
     MaskEstimationModule,
-    OverlappingMaskEstimationModule, PatchingMaskEstimationModule, MultAddMaskEstimationModule
+    OverlappingMaskEstimationModule
 )
 from core.model.bsrnn.tfmodel import (
     ConvolutionalTimeFreqModule,

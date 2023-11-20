@@ -6,7 +6,6 @@ from .bsrnn.wrapper import (
     SingleMaskMultiSourceBandSplitRNN,
     SingleMaskMultiSourceBandSplitTransformer
 )
-from .hyperbolicnn.hyperbolicnn import HyperbolicNeuralNet
 
 from .oracle.idealmask import IdealRatioMask, PhaseSensitiveFilter, IdealAmplitudeMask, IdealWienerMask, IdealBinaryMask, IdentityMask
 

@@ -1,0 +1,110 @@
+{
+    "machine_info": {
+        "system": {
+            "system": "Linux",
+            "node": "deepnet3",
+            "release": "5.15.0-47-generic"
+        },
+        "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz",
+            "architecture": "x86_64",
+            "cores": {
+                "physical": 8,
+                "total": 16
+            },
+            "frequency": "5.15 GHz"
+        },
+        "memory": {
+            "total": "62.53 GB",
+            "used": "16.40 GB",
+            "available": "45.18 GB"
+        },
+        "gpus": [
+            {
+                "name": "NVIDIA GeForce RTX 3090",
+                "memory": "24576.0 MB"
+            }
+        ]
+    },
+    "device": "cuda",
+    "params": 64480864,
+    "flops": 290626892360,
+    "timing": {
+        "batch_size_1": {
+            "on_device_inference": {
+                "metrics": {
+                    "batches_per_second_mean": -0.010221428378879375,
+                    "batches_per_second_std": 2.3573560283767806e-05,
+                    "batches_per_second_min": -0.010277657981196729,
+                    "batches_per_second_max": -0.010100873099150575,
+                    "seconds_per_batch_mean": -97.83420654296874,
+                    "seconds_per_batch_std": 0.22632456943094564,
+                    "seconds_per_batch_min": -99.0013427734375,
+                    "seconds_per_batch_max": -97.29843139648438
+                },
+                "human_readable": {
+                    "batches_per_second": "-0.01 +/- 0.00 [-0.01, -0.01]",
+                    "batch_latency": "-97834206.543 us +/- 226.325 ms [-99001342.773 us, -97298431.396 us]"
+                }
+            },
+            "cpu_to_gpu": {
+                "metrics": {
+                    "batches_per_second_mean": 47917.12701912099,
+                    "batches_per_second_std": 18987.223875628995,
+                    "batches_per_second_min": 18236.104347826087,
+                    "batches_per_second_max": 72315.58620689655,
+                    "seconds_per_batch_mean": 2.4838447570800783e-05,
+                    "seconds_per_batch_std": 1.0222980549836398e-05,
+                    "seconds_per_batch_min": 1.3828277587890625e-05,
+                    "seconds_per_batch_max": 5.4836273193359375e-05
+                },
+                "human_readable": {
+                    "batches_per_second": "47.92 K +/- 18.99 K [18.24 K, 72.32 K]",
+                    "batch_latency": "24.838 us +/- 10.223 us [13.828 us, 54.836 us]"
+                }
+            },
+            "gpu_to_cpu": {
+                "metrics": {
+                    "batches_per_second_mean": 1029851.4285714285,
+                    "batches_per_second_std": 242466.2902628789,
+                    "batches_per_second_min": 524288.0,
+                    "batches_per_second_max": 1398101.3333333333,
+                    "seconds_per_batch_mean": 1.02996826171875e-06,
+                    "seconds_per_batch_std": 2.60913162618722e-07,
+                    "seconds_per_batch_min": 7.152557373046875e-07,
+                    "seconds_per_batch_max": 1.9073486328125e-06
+                },
+                "human_readable": {
+                    "batches_per_second": "1.03 M +/- 242.47 K [524.29 K, 1.40 M]",
+                    "batch_latency": "1.030 us +/- 0.261 us [0.715 us, 1.907 us]"
+                }
+            },
+            "total": {
+                "metrics": {
+                    "batches_per_second_mean": 10.216734190168497,
+                    "batches_per_second_std": 0.023553850546394656,
+                    "batches_per_second_min": 10.09712178258818,
+                    "batches_per_second_max": 10.27378610812413,
+                    "seconds_per_batch_mean": 0.09787915706634522,
+                    "seconds_per_batch_std": 0.00022631525380180392,
+                    "seconds_per_batch_min": 0.0973351001739502,
+                    "seconds_per_batch_max": 0.09903812408447266
+                },
+                "human_readable": {
+                    "batches_per_second": "10.22 +/- 0.02 [10.10, 10.27]",
+                    "batch_latency": "97.879 ms +/- 226.315 us [97.335 ms, 99.038 ms]"
+                }
+            }
+        }
+    },
+    "memory": {
+        "batch_size_1": {
+            "pre_inference_bytes": 271879680,
+            "max_inference_bytes": 674285568,
+            "post_inference_bytes": 271879680,
+            "pre_inference": "259.28 MB",
+            "max_inference": "643.05 MB",
+            "post_inference": "259.28 MB"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "machine_info": {
+        "system": {
+            "system": "Linux",
+            "node": "deepnet3",
+            "release": "5.15.0-47-generic"
+        },
+        "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz",
+            "architecture": "x86_64",
+            "cores": {
+                "physical": 8,
+                "total": 16
+            },
+            "frequency": "5.15 GHz"
+        },
+        "memory": {
+            "total": "62.53 GB",
+            "used": "15.14 GB",
+            "available": "46.45 GB"
+        },
+        "gpus": [
+            {
+                "name": "NVIDIA GeForce RTX 3090",
+                "memory": "24576.0 MB"
+            }
+        ]
+    },
+    "device": "cpu",
+    "params": 32631840,
+    "flops": 274201949592,
+    "timing": {
+        "batch_size_1": {
+            "on_device_inference": {
+                "metrics": {
+                    "batches_per_second_mean": 0.412458123932096,
+                    "batches_per_second_std": 0.04629463011667551,
+                    "batches_per_second_min": 0.351987456257567,
+                    "batches_per_second_max": 0.511057550486426,
+                    "seconds_per_batch_mean": 2.4525498795509337,
+                    "seconds_per_batch_std": 0.2508788453030095,
+                    "seconds_per_batch_min": 1.9567267894744873,
+                    "seconds_per_batch_max": 2.841010332107544
+                },
+                "human_readable": {
+                    "batches_per_second": "0.41 +/- 0.05 [0.35, 0.51]",
+                    "batch_latency": "2.453 s +/- 250.879 ms [1.957 s, 2.841 s]"
+                }
+            }
+        }
+    }
+}

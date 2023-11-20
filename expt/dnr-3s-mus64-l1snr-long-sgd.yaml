@@ -1,9 +1,0 @@
-seed: 42
-trainer: "file:$PROJECT_ROOT/configs/trainer/bsrnn-noaccum-long.yaml"
-data: "file:$PROJECT_ROOT/configs/data/dnr.yaml"
-system:
-  model: "file:$PROJECT_ROOT/configs/model/bsrnn-small-dnr-multi-mus64.yaml"
-  optimizer: "file:$PROJECT_ROOT/configs/optimizer/sgd.yaml"
-  loss: "file:$PROJECT_ROOT/configs/loss/psnr.yaml"
-  metrics: "file:$PROJECT_ROOT/configs/metrics/default.yaml"
-  inference: "file:$PROJECT_ROOT/configs/inference/default.yaml"

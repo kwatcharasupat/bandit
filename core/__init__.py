@@ -15,8 +15,8 @@ import torch
 import torchaudio as ta
 import torchmetrics as tm
 from asteroid import losses as asteroid_losses
-from deepspeed.ops.adam import DeepSpeedCPUAdam
-from geoopt import optim as gooptim
+# from deepspeed.ops.adam import DeepSpeedCPUAdam
+# from geoopt import optim as gooptim
 from pytorch_lightning.utilities.types import STEP_OUTPUT
 from torch import nn, optim
 from torch.optim import lr_scheduler
@@ -571,7 +571,7 @@ class LightningSystem(pl.LightningModule):
 
         for b in range(batch_size):
             for stem in output["audio"]:
-                print(f"Saving audio for {stem}")
+                print(f"Saving audio for {stem} to {self.predict_output_path}")
                 track_name = batch["track"][b].split("/")[-1]
 
                 if batch.get("audio", {}).get(stem, None) is not None:

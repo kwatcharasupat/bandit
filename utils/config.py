@@ -6,6 +6,7 @@ from pytorch_lightning import callbacks, loggers
 
 from utils._types import StringKeyedNestedDict
 
+import os
 
 def read_yaml(path: str) -> StringKeyedNestedDict:
     with open(path, "r") as f:
@@ -20,8 +21,14 @@ def read_nested_yaml_dict(
         # print(k, "-->", v)
         if isinstance(v, str):
             if prefix in v:
-                # print('entering')
-                subconfig = read_nested_yaml(v.replace(prefix, ""))
+                v = v.replace(prefix, "")
+                if "$PROJECT_ROOT" in v:
+                    v = v.replace("$PROJECT_ROOT", os.environ["PROJECT_ROOT"])
+                
+                if "$DATA_ROOT" in v:
+                    v = v.replace("$DATA_ROOT", os.environ["DATA_ROOT"])
+
+                subconfig = read_nested_yaml(v)
                 config[k] = subconfig
             elif "[[ipaddr]]" == v:
                 import socket
