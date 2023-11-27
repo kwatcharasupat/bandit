@@ -5,7 +5,7 @@
 Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation" by Karn N. Watcharasupat, Chih-Wei Wu, Yiwei Ding, Iroro Orife, Aaron J. Hipple, Phillip A. Williams, Scott Kramer, Alexander Lerch, William Wolcott. [arXiv](https://arxiv.org/abs/2309.02539)
 
 ## For Demo
-Go [here](https://karnwatcharasupat.github.io/bandit-demo/)
+Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected models using the first 10 files from DnR test set. Go [here](https://zenodo.org/records/10119822) for exhaustive inference on the entire DnR test set for selected models. 
 
 ## For Replication
 
