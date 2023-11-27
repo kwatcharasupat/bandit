@@ -17,7 +17,7 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/)
 
 ## For Inference (**COMING SOON**)
 
-- Get the checkpoints from [(link to be added)]()
+- Get the checkpoints from [(Zenodo)](https://zenodo.org/records/10160698)
 - `python inference.py expt/path-to-the-desired-model-config.yaml --ckpt_path=path/to/checkpoint.ckpt`
 
 ## Citation
