@@ -566,10 +566,10 @@ if __name__ == "__main__":
 
     band_defs = []
 
-    for bands in [MelBandsplitSpecification, EquivalentRectangularBandsplitSpecification, MusicalBandsplitSpecification, BarkBandsplitSpecification, TriangularBarkBandsplitSpecification]:
+    for bands in [VocalBandsplitSpecification]:  
         band_name = bands.__name__.replace("BandsplitSpecification", "")
 
-        mbs = bands(nfft=2048, fs=44100, n_bands=64).get_band_specs()
+        mbs = bands(nfft=2048, fs=44100).get_band_specs()
 
         for i, (f_min, f_max) in enumerate(mbs):
             band_defs.append({
@@ -580,4 +580,4 @@ if __name__ == "__main__":
             })
 
     df = pd.DataFrame(band_defs)
-    df.to_csv("/root/bandsplit-rnn/core/model/bsrnn/bands.csv", index=False)
+    df.to_csv("vox7bands.csv", index=False)
