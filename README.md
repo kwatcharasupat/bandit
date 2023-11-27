@@ -15,9 +15,9 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/)
 - `python train.py expt/path-to-the-desired-experiment.yaml`.
 - `python test.py expt/path-to-the-desired-experiment.yaml --ckpt_path=path/to/checkpoint-from-training.ckpt`.
 
-## For Inference (**COMING SOON**)
+## For Inference
 
-- Get the checkpoints from [(Zenodo)](https://zenodo.org/records/10160698)
+- Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698)
 - `python inference.py expt/path-to-the-desired-model-config.yaml --ckpt_path=path/to/checkpoint.ckpt`
 
 ## Citation
