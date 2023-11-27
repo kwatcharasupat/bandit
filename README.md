@@ -21,8 +21,9 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 - `python inference.py expt/path-to-the-desired-model-config.yaml --ckpt_path=path/to/checkpoint.ckpt`
 
 ## Complexity Benchmark
+Intel Core i9-11900K CPU + NVIDIA GeForce RTX 3090 GPU
 
-| model         | band       |   flops |   params |   peak_memory |   batch_per_second_cuda |   batch_per_second_cpu |   cuda_speedup |
+| Model         | Band       |   GFlops |   Params (M) |   Peak Memory (MB) |   Batch per second (GPU) |   Batch per second (CPU) |   GPU speedup |
 |:--------------|:-----------|--------:|---------:|--------------:|------------------------:|-----------------------:|---------------:|
 | BSRNN-GRU8*   | Vocals V7  |   238.2 |     15.8 |         416.2 |                   12.35 |                   0.61 |           20.2 |
 | BSRNN-LSTM12* | Vocals V7  |   462.2 |     25.8 |         505.4 |                    7.99 |                   0.6  |           13.4 |
