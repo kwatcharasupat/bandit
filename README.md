@@ -1,8 +1,7 @@
 # BandIt: Cinematic Audio Source Separation
-
-
-
 Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation" by Karn N. Watcharasupat, Chih-Wei Wu, Yiwei Ding, Iroro Orife, Aaron J. Hipple, Phillip A. Williams, Scott Kramer, Alexander Lerch, William Wolcott. [arXiv](https://arxiv.org/abs/2309.02539)
+
+> Cinematic audio source separation is a relatively new subtask of audio source separation, with the aim of extracting the dialogue, music, and effects stems from their mixture. In this work, we developed a model generalizing the Bandsplit RNN for any complete or overcomplete partitions of the frequency axis. Psychoacoustically motivated frequency scales were used to inform the band definitions which are now defined with redundancy for more reliable feature extraction. A loss function motivated by the signal-to-noise ratio and the sparsity-promoting property of the 1-norm was proposed. We additionally exploit the information-sharing property of a common-encoder setup to reduce computational complexity during both training and inference, improve separation performance for hard-to-generalize classes of sounds, and allow flexibility during inference time with detachable decoders. Our best model sets the state of the art on the Divide and Remaster dataset with performance above the ideal ratio mask for the dialogue stem.
 
 ## For Demo
 Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected models using the first 10 files from DnR test set. Go [here](https://zenodo.org/records/10119822) for exhaustive inference on the entire DnR test set for selected models. 
