@@ -43,12 +43,13 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 ## Citation
 
 ```
-@misc{watcharasupat2023generalized,
-      title={A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation}, 
-      author={Karn N. Watcharasupat and Chih-Wei Wu and Yiwei Ding and Iroro Orife and Aaron J. Hipple and Phillip A. Williams and Scott Kramer and Alexander Lerch and William Wolcott},
-      year={2023},
-      eprint={2309.02539},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
-}
+@article{watcharasupat2023bandit,
+  author={Watcharasupat, Karn N. and Wu, Chih-Wei and Ding, Yiwei and Orife, Iroro and Hipple, Aaron J. and Williams, Phillip A. and Kramer, Scott and Lerch, Alexander and Wolcott, William},
+  journal={IEEE Open Journal of Signal Processing}, 
+  title={A Generalized Bandsplit Neural Network for Cinematic Audio Source separation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-9},
+  doi={10.1109/OJSP.2023.3339428}}
 ```
