@@ -135,7 +135,7 @@ def inference(
 
 def inference_multiple(
     ckpt_path: str,
-    model_name: str = None,
+    model_name: str,
     file_glob: str,
     output_dir: Optional[str],
     include_track_name: Optional[bool] = False,
