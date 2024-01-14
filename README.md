@@ -19,7 +19,21 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 ## For Inference
 
 - Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698)
-- `python inference.py expt/path-to-the-desired-model-config.yaml --ckpt_path=path/to/checkpoint.ckpt`
+
+```bash
+python inference.py inference \
+  --ckpt_path=path/to/checkpoint.ckpt \
+  --file_path=path/to/file.wav \
+  --model_name=model_id
+```
+or
+
+```bash
+python inference.py inference_multiple \
+  --ckpt_path=path/to/checkpoint.ckpt \
+  --file_glob=path/to/glob/*.wav \
+  --model_name=model_id
+```
 
 ## Complexity Benchmark
 - Intel Core i9-11900K CPU + NVIDIA GeForce RTX 3090 GPU.
