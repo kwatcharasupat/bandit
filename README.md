@@ -19,6 +19,8 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 ## For Inference
 
 - Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698)
+- Get the corresponding yaml config file from `expt`.
+- Put the checkpoint and the yaml config file into the same subfolder. Rename the config file `hparams.yaml`.
 
 ```bash
 python inference.py inference \
