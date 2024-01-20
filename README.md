@@ -61,13 +61,13 @@ python inference.py inference_multiple \
 ## Citation
 
 ```
-@article{watcharasupat2023bandit,
+@ARTICLE{10342812,
   author={Watcharasupat, Karn N. and Wu, Chih-Wei and Ding, Yiwei and Orife, Iroro and Hipple, Aaron J. and Williams, Phillip A. and Kramer, Scott and Lerch, Alexander and Wolcott, William},
   journal={IEEE Open Journal of Signal Processing}, 
-  title={A Generalized Bandsplit Neural Network for Cinematic Audio Source separation}, 
-  year={2023},
-  volume={},
+  title={A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation}, 
+  year={2024},
+  volume={5},
   number={},
-  pages={1-9},
+  pages={73-81},
   doi={10.1109/OJSP.2023.3339428}}
 ```
