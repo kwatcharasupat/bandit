@@ -21,6 +21,9 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 - Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698)
 - Get the corresponding yaml config file from `expt`.
 - Put the checkpoint and the yaml config file into the same subfolder. Rename the config file `hparams.yaml`.
+- If you run into CUDA OOM, try reducing the batch size in the inference config. Another way without changing the config itself is by setting the `system.inference` parameter to `"file:$PROJECT_ROOT/configs/inference/default16.yaml"`, or `default8.yaml`.
+- If you run into a CPU OOM, this is probably due to the resampler. You might want to get your audio file to 44.1 kHz beforehand, especially if it's big. A fix is coming (soon??).
+- Please do not hesitate to report other OOM cases.
 
 ```bash
 python inference.py inference \
