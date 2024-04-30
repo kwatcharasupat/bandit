@@ -42,6 +42,7 @@ python inference.py inference_multiple \
 
 ## Complexity Benchmark
 - Intel Core i9-11900K CPU + NVIDIA GeForce RTX 3090 GPU.
+- Note that this is benchmarked on _one_ 6-second chunk. The memory usage in practice will scale according to your inference batch size plus some OLA overhead.
 
 | Model         | Band       |   GFlops |   Params (M) |   Peak Memory (MB) |   Batch per second (GPU) |   Batch per second (CPU) |   GPU speedup |
 |:--------------|:-----------|--------:|---------:|--------------:|------------------------:|-----------------------:|---------------:|
