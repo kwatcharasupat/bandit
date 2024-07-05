@@ -1,9 +1,9 @@
 # BandIt: Cinematic Audio Source Separation
-Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation" by Karn N. Watcharasupat, Chih-Wei Wu, Yiwei Ding, Iroro Orife, Aaron J. Hipple, Phillip A. Williams, Scott Kramer, Alexander Lerch, William Wolcott. 
-
-[Paper](https://ieeexplore.ieee.org/document/10342812)
+Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation" by Karn N. Watcharasupat, Chih-Wei Wu, Yiwei Ding, Iroro Orife, Aaron J. Hipple, Phillip A. Williams, Scott Kramer, Alexander Lerch, William Wolcott. [[open-access paper]](https://ieeexplore.ieee.org/document/10342812)
 
 > Cinematic audio source separation is a relatively new subtask of audio source separation, with the aim of extracting the dialogue, music, and effects stems from their mixture. In this work, we developed a model generalizing the Bandsplit RNN for any complete or overcomplete partitions of the frequency axis. Psychoacoustically motivated frequency scales were used to inform the band definitions which are now defined with redundancy for more reliable feature extraction. A loss function motivated by the signal-to-noise ratio and the sparsity-promoting property of the 1-norm was proposed. We additionally exploit the information-sharing property of a common-encoder setup to reduce computational complexity during both training and inference, improve separation performance for hard-to-generalize classes of sounds, and allow flexibility during inference time with detachable decoders. Our best model sets the state of the art on the Divide and Remaster dataset with performance above the ideal ratio mask for the dialogue stem.
+
+For the query-based music source separation model, Banquet, go [here](https://github.com/kwatcharasupat/query-bandit).
 
 ## For Demo
 Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected models using the first 10 files from DnR test set. Go [here](https://zenodo.org/records/10119822) for exhaustive inference on the entire DnR test set for selected models. 
@@ -18,7 +18,7 @@ Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected
 
 ## For Inference
 
-- Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698)
+- Get the checkpoints from [Zenodo](https://zenodo.org/records/10160698). 
 - Get the corresponding yaml config file from `expt`.
 - Put the checkpoint and the yaml config file into the same subfolder. Rename the config file `hparams.yaml`.
 - If you run into CUDA OOM, try reducing the batch size in the inference config. Another way without changing the config itself is by setting the `system.inference` parameter to `"file:$PROJECT_ROOT/configs/inference/default16.yaml"`, or `default8.yaml`.
@@ -65,7 +65,7 @@ python inference.py inference_multiple \
 ## Citation
 
 ```
-@ARTICLE{10342812,
+@article{Watcharasupat2023Bandit
   author={Watcharasupat, Karn N. and Wu, Chih-Wei and Ding, Yiwei and Orife, Iroro and Hipple, Aaron J. and Williams, Phillip A. and Kramer, Scott and Lerch, Alexander and Wolcott, William},
   journal={IEEE Open Journal of Signal Processing}, 
   title={A Generalized Bandsplit Neural Network for Cinematic Audio Source Separation}, 
