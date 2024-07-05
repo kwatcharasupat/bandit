@@ -6,7 +6,7 @@ Code for "A Generalized Bandsplit Neural Network for Cinematic Audio Source Sepa
 For the query-based music source separation model, Banquet, go [here](https://github.com/kwatcharasupat/query-bandit).
 
 ## For Demo
-Go [here](https://karnwatcharasupat.github.io/bandit-demo/) for demo of selected models using the first 10 files from DnR test set. Go [here](https://zenodo.org/records/10119822) for exhaustive inference on the entire DnR test set for selected models. 
+Go [here](https://kwatcharasupat.github.io/bandit-demo/) for demo of selected models using the first 10 files from DnR test set. Go [here](https://zenodo.org/records/10119822) for exhaustive inference on the entire DnR test set for selected models. 
 
 ## For Replication
 
